@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    @csrf
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Q-Assement | FCI</title>
     @vite(['resources/sass/evans.scss', 'resources/js/evans.js'])

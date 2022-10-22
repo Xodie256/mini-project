@@ -40,7 +40,7 @@
                     <!-- /.card -->
 
                     <!-- About Me Box -->
-                    <div class="card card-primary">
+                    {{-- <div class="card card-primary">
                         <div class="card-header">
                             <h3 class="card-title">About</h3>
                         </div>
@@ -78,7 +78,7 @@
                                 fermentum enim neque.</p>
                         </div>
                         <!-- /.card-body -->
-                    </div>
+                    </div> --}}
                     <!-- /.card -->
                 </div>
                 <!-- /.col -->
@@ -228,12 +228,6 @@
                                                 <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded
                                                     new photos</h3>
 
-                                                {{-- <div class="timeline-body">
-                          <img src="https://placehold.it/150x100" alt="...">
-                          <img src="https://placehold.it/150x100" alt="...">
-                          <img src="https://placehold.it/150x100" alt="...">
-                          <img src="https://placehold.it/150x100" alt="...">
-                        </div> --}}
                                             </div>
                                         </div>
                                         <!-- END timeline item -->

@@ -126,8 +126,7 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+
                         <li class="nav-item">
                             <form action="{{ route('logout') }}" method="post">
                                 @csrf
@@ -195,7 +194,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="/getreport" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Reports</p>
                                     </a>
@@ -224,6 +223,31 @@
                             </ul>
                         </li>
 
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-pen"></i>
+                                <p>
+                                    Course Units
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>All Courses</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('add unit')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add Course</p>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        
                         {{-- concepts --}}
                         <li class="nav-item">
                             <a href="#" class="nav-link">
@@ -246,21 +270,35 @@
                                         <p>Add Course</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="{{route('c edits')}}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Edit Courses</p>
-                                    </a>
-                                </li>
+                                
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-building"></i>
+                                <p>
+                                    Departments
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Reports</p>
+                                        <p>All Departments</p>
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="{{route('d edits')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Department Opts</p>
+                                    </a>
+                                </li>
+                                
                             </ul>
                         </li>
-                        {{-- meetings --}}
+
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-building"></i>
@@ -279,21 +317,34 @@
                                 <li class="nav-item">
                                     <a href="{{route('f edits')}}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Add Faculty</p>
+                                        <p>Faculty Opts</p>
                                     </a>
                                 </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-building"></i>
+                                <p>
+                                    Lecturers
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{route('f edits')}}" class="nav-link">
+                                    <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Edit Available</p>
+                                        <p>All Lecturer </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Reports</p>
+                                        <p>Lecturer Opts</p>
                                     </a>
                                 </li>
+                                
                             </ul>
                         </li>
                     </ul>
